@@ -1,0 +1,67 @@
+// /**
+//  * @author Grom Olga <GromOlga.work@gmail.com>
+//  */
+
+.header.content {
+    display: flex;
+    justify-content: space-between;
+}
+.minicart-wrapper {
+    order: 3;
+}
+.block-search {
+    flex-grow: 1;
+    .action.search {
+        right: 0;
+        padding: 0 10px;
+        background-color: navy;
+        &[disabled] {
+            opacity: 1;
+        }
+        &:before {
+            color: #fff;
+        }
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus {
+            background-color: navy;
+            color: #fff;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .header.content {
+        display: block;
+    }
+    .minicart-wrapper,
+    .block-search .label {
+        margin-top: 10px;
+        &:before {
+            margin-right: 0;
+            color: #fff;
+        }
+    }
+    .block-search .label {
+        background-color: navy;
+        border-radius: 3px;
+    }
+    .minicart-wrapper,
+    .block-search .label:before {
+        padding: 3px 7px;
+    }
+    .block-search .label:hover:before {
+        color: #fff;
+    }
+}
+@media only screen and (max-width: 640px){
+    .block-search .label,
+    .minicart-wrapper {
+        margin-top: 0;
+    }
+    .minicart-wrapper {
+        padding: 12px 10px;
+    }
+}
+
