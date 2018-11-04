@@ -51,6 +51,16 @@ module.exports = {
         ],
         dsl: 'less'
     },
+    mage2: {
+        area: 'frontend',
+        name: 'Project/Mage2',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l'
+        ],
+        dsl: 'less'
+    },
     backend: {
         area: 'adminhtml',
         name: 'Magento/backend',
